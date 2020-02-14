@@ -169,7 +169,7 @@ def foodbyCountry(countryName):
         "2015": foodCountryData2015
     }
 
-    return jsonify(countryFood)
+    return jsonify(list(countryFood))
 
 @app.route("/api/v1.0/countrynames")
 def countries():
@@ -192,7 +192,8 @@ def healthindex():
         foodIndex.append(column.name)
 
 
-    return jsonify(foodIndex[1:])
+    return jsonify(list(foodIndex[1:]))
+
 
 
 if __name__ == "__main__":
