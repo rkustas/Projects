@@ -23,6 +23,7 @@ US_health = Base.classes.us_healthcare_costs_percapita
 
 
 app = Flask(__name__)
+CORS(app)
 @app.route("/")
 def home():
     return (
