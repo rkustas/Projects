@@ -4,7 +4,7 @@ from flask import Flask, render_template,jsonify
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import *
-from flask_cors import CORS
+from flask_cors import CORS, cross_origin
 
 db_url ='postgresql://vjceebhreyputc:b737986d4390ebd9bcb804b66ecb4a19c90669e445168c7ce07c8a16725f448e@ec2-23-21-156-171.compute-1.amazonaws.com/dbd23rm4jgm5s1'
 engine = create_engine(db_url)
