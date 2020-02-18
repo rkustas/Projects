@@ -172,7 +172,7 @@ def foodbyCountry(countryName):
         "2015": foodCountryData2015
     }
 
-    return jsonify(list(countryFood))
+    return jsonify(countryFood)
 
 @app.route("/api/v1.0/countrynames")
 def countries():
