@@ -1,4 +1,4 @@
-var baseurl = "https://incomehealth.herokuapp.com";
+var baseurl = "https://incomehealth.herokuapp.com/api/v1.0";
 var healthcare = "/US_healthcare_cost";
 var food = "/fooddata/";
 var countrynames = "/countrynames";
